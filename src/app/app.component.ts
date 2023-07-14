@@ -9,7 +9,7 @@ import {TranslateService} from "@ngx-translate/core";
 })
 export class AppComponent implements OnInit {
   title: string = 'Tündérmosoly';
-  appLang: string = 'hu';
+  appLang: string = localStorage.getItem('app-locale') || 'hu';
 
   constructor(
     public translate: TranslateService
