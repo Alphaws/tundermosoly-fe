@@ -7,6 +7,7 @@ import {PrivacyComponent} from "./pages/privacy.component";
 import {SponsorsComponent} from "./pages/sponsors.component";
 import {SponsoredComponent} from "./pages/sponsored.component";
 import {AboutUsComponent} from "./pages/about-us.component";
+import {PrstartComponent} from "./pages/prstart.component";
 
 const routes: Routes = [
   {path: '', component: WelcomeComponent},
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'sponsors', component: SponsorsComponent},
   {path: 'privacy', component: PrivacyComponent},
   {path: 'about-us', component: AboutUsComponent},
+  {path: 'prstart', component: PrstartComponent},
 ];
 
 @NgModule({
