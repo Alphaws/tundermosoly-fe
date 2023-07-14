@@ -17,12 +17,10 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     initFlowbite();
-    console.log('Lang:', this.translate.currentLang);
   }
 
   translateLanguageTo(language: string) {
     this.translate.use(language);
     localStorage.setItem('app-locale', language);
-    console.log('Lang:', this.translate.currentLang);
   }
 }
