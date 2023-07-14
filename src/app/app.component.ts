@@ -12,8 +12,9 @@ export class AppComponent implements OnInit {
   appLang: string = 'hu';
 
   constructor(
-    private translate: TranslateService
+    public translate: TranslateService
   ) {
+    translate.addLangs(['hu', 'en']);
   }
 
   ngOnInit() {
@@ -22,6 +23,7 @@ export class AppComponent implements OnInit {
 
   translateLanguageTo(language: string) {
     this.translate.use(language);
+    this.appLang = language;
     localStorage.setItem('app-locale', language);
   }
 }

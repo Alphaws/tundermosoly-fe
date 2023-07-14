@@ -19,14 +19,14 @@
       <ul
         class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row
                md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-<!--        <li>-->
-<!--          <a routerLink="/sponsored"-->
-<!--             class="block py-2 pl-3 pr-4 bg-blue-700 rounded-->
-<!--                    text-white-->
-<!--              md:bg-transparent md:text-blue-700-->
-<!--              md:p-0 dark:text-white md:dark:text-blue-500"-->
-<!--             aria-current="page">Kiket támogatunk?</a>-->
-<!--        </li>-->
+        <!--        <li>-->
+        <!--          <a routerLink="/sponsored"-->
+        <!--             class="block py-2 pl-3 pr-4 bg-blue-700 rounded-->
+        <!--                    text-white-->
+        <!--              md:bg-transparent md:text-blue-700-->
+        <!--              md:p-0 dark:text-white md:dark:text-blue-500"-->
+        <!--             aria-current="page">Kiket támogatunk?</a>-->
+        <!--        </li>-->
         <li>
           <a routerLink="/sponsored"
              class="block py-2 pl-3 pr-4  rounded hover:bg-gray-100 md:hover:bg-transparent
@@ -53,27 +53,25 @@
                     md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500
                     dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">{{ 'events' | translate }}</a>
         </li>
-
-        <li>
-            <a (click)="translateLanguageTo('en')"><img src="/assets/img/pngegg.png" alt="" class="h-6"></a>
+        <li *ngIf="appLang == 'hu'">
+          <a (click)="translateLanguageTo('en')"><img src="/assets/img/pngegg.png" alt="" class="h-6"></a>
         </li>
-
-          <li style="margin-left: 0">
-            <a (click)="translateLanguageTo('hu')"><img src="/assets/img/hu_flag.png" alt="" class="h-6"></a>
-          </li>
-
+        <li *ngIf="appLang == 'en'">
+          <a (click)="translateLanguageTo('hu')"><img src="/assets/img/hu_flag.png" alt="" class="h-6"></a>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 <div class="max-w-screen-xl mx-auto pb-24">
-    <router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </div>
 <footer class="bg-gray-800 text-center
  rounded-lg shadow mx-auto fixed left-1/2 -translate-x-1/2 bottom-0">
   <div class="p-4 md:flex md:items-center md:justify-between">
       <span
-        class="hidden sm:block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a routerLink="/prstart" class="hover:underline">PrStart™</a>. All Rights Reserved.
+        class="hidden sm:block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a routerLink="/prstart"
+                                                                                                  class="hover:underline">PrStart™</a>. All Rights Reserved.
     </span>
     <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
       <li>

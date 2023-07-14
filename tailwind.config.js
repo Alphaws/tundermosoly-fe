@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     fontFamily: {
       'sans': ['Roboto', 'sans-serif'],
-      'roboto': ['Roboto', 'sans-serif'],
+      'roboto': ['Roboto Condensed', 'sans-serif'],
     },
     extend: {},
   },
