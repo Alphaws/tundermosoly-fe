@@ -6,7 +6,13 @@
   "page": {
     "welcome": {
       "title": "Welcome to the Tündérmosoly Foundation's website!",
-      "b1": "The Tündérmosoly Foundation is a community initiative dedicated to providing support for children with multiple disabilities and their families. Our goal is to offer developmental opportunities and assistance to children with intellectual, physical, and visual impairments, helping them achieve a better quality of life."
+      "b1": "The Tündérmosoly Foundation is a community initiative dedicated to providing support for children with multiple disabilities and their families. Our goal is to offer developmental opportunities and assistance to children with intellectual, physical, and visual impairments, helping them achieve a better quality of life.",
+      "b2": "Working in collaboration with professionals, therapists, and supporters, we are committed to creating the necessary conditions for children's growth and their active participation in everyday life. Each child has unique needs, which is why we provide personalized therapies, interventions, and resources tailored to their specific requirements.",
+      "b3": "Our foundation's activities are primarily funded through donations and support. Contributions enable us to continue our developmental programs, therapies, and supportive services. Every donation makes a significant impact and brings a smile to the faces of the children we serve.",
+      "b4": "On our website, you will find information about our activities, projects, stories of the children we support, and the therapeutic options we provide. Additionally, you have the opportunity to make direct donations and become a supporter.",
+      "b5": "Join us in our mission to bring more smiles to the faces of children! We sincerely appreciate your support of the Tündérmosoly Foundation.",
+      "b6": "If you have any questions, please feel free to contact us using the provided contact information.",
+      "b7": "Best regards,"
     }
   }
 }
