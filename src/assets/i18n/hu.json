@@ -1,9 +1,11 @@
 {
   "lang_code": "en",
+  "under_dev": "Az oldal tartalma feltöltés alatt...",
   "Contact": "Kapcsolat",
   "who we support": "Akiket támogatunk",
   "events": "Események",
   "supporters": "Támogatóink",
+  "privacy": "Adatvédelem",
   "page": {
     "welcome": {
       "title": "Üdvözöljük a Tündérmosoly Alapítvány weboldalán!",
