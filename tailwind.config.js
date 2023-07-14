@@ -6,6 +6,10 @@ module.exports = {
     "./node_modules/flowbite/**/*.js" // add this line
   ],
   theme: {
+    fontFamily: {
+      'sans': ['Roboto', 'sans-serif'],
+      'roboto': ['Roboto', 'sans-serif'],
+    },
     extend: {},
   },
   plugins: [
