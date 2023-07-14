@@ -35,7 +35,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   imports: [
     HttpClientModule,
     TranslateModule.forRoot({
-      defaultLanguage: 'hu',
+      defaultLanguage: localStorage.getItem('app-locale') || 'hu',
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory,

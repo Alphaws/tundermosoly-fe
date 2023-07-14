@@ -13,7 +13,8 @@ export class AppComponent implements OnInit {
 
   constructor(
     private translate: TranslateService
-  ) {}
+  ) {
+  }
 
   ngOnInit() {
     initFlowbite();
