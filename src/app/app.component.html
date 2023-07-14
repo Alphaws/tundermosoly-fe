@@ -56,7 +56,7 @@
         <li *ngIf="appLang == 'hu'">
           <a (click)="translateLanguageTo('en')"><img src="/assets/img/pngegg.png" alt="" class="h-6"></a>
         </li>
-        <li *ngIf="appLang == 'en'">
+        <li *ngIf="appLang != 'hu'">
           <a (click)="translateLanguageTo('hu')"><img src="/assets/img/hu_flag.png" alt="" class="h-6"></a>
         </li>
       </ul>
