@@ -4,6 +4,9 @@
   "events": "Events",
   "supporters": "Supporters",
   "page": {
-    "welcome": "Welcome to the Tündérmosoly Foundation's website!"
+    "welcome": {
+      "title": "Welcome to the Tündérmosoly Foundation's website!",
+      "b1": "The Tündérmosoly Foundation is a community initiative dedicated to providing support for children with multiple disabilities and their families. Our goal is to offer developmental opportunities and assistance to children with intellectual, physical, and visual impairments, helping them achieve a better quality of life."
+    }
   }
 }
