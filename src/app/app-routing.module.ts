@@ -16,7 +16,7 @@ const routes: Routes = [
       {path: 'events', component: EventsComponent},
       {path: 'sponsored', component: SponsoredComponent},
       {path: 'sponsors', component: SponsorsComponent},
-      {path: 'privacy', component: PrivacyComponent},
+      {path: 'adatvedelem', component: PrivacyComponent},
       {path: 'about-us', component: AboutUsComponent},
       {path: 'prstart', component: PrstartComponent},
       {path: '**', component: PageNotFoundComponent}
