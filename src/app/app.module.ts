@@ -17,6 +17,7 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import { LoginComponent } from './pages/login/login.component';
 import {FormsModule} from "@angular/forms";
+import { PageNotFoundComponent } from './pages/error/page-not-found/page-not-found.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -33,7 +34,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     PrivacyComponent,
     AboutUsComponent,
     PrstartComponent,
-    LoginComponent
+    LoginComponent,
+    PageNotFoundComponent
   ],
   imports: [
     HttpClientModule,
