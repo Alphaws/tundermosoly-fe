@@ -1,13 +1,89 @@
-<div class="max-w-7xl p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-  <a routerLink="/">
-    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ 'Contact' | translate }}</h5>
-  </a>
-  <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ 'under_dev' | translate }}</p>
-  <a routerLink="/" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white
-   bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-    Főoldal
-    <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-    </svg>
-  </a>
+<div class="text-gray-300 max-w-7xl p-6 bg-gray-800 border border-gray-700 rounded-lg shadow">
+  <h5 class="mb-2 text-2xl  tracking-tight text-white">{{ 'contact' | translate }}</h5>
+<div class="mx-5">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div>
+      <p class="pt-3">
+        Székhely:
+      </p>
+
+      <p class="pt-3">
+        Email:
+      </p>
+
+      <p class="pt-3">
+        Telefon:
+      </p>
+
+      <p class="pt-3">
+        Cégjegyzékszám:
+      </p>
+
+      <p class="pt-3">
+        Adószám:
+      </p>
+    </div>
+
+    <div>
+      <form class="w-full max-w-lg" [formGroup]="contactForm">
+        <div class="flex flex-wrap -mx-3 mb-6">
+          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+            <label class="block uppercase tracking-wide text-gray-400 text-xs mb-2" for="last-name">
+              {{ "last_name" | translate }}
+            </label>
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3
+             px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                   id="last-name"
+                   type="text"
+                   placeholder=""
+                   formControlName="lastName">
+            <p class="text-red-500 text-xs italic"></p>
+          </div>
+          <div class="w-full md:w-1/2 px-3">
+            <label class="block uppercase tracking-wide text-gray-400 text-xs mb-2" for="grid-first-name">
+              {{ "first_name" | translate }}
+            </label>
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3
+             px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                   id="grid-first-name" type="text" placeholder="" formControlName="firstName">
+          </div>
+        </div>
+        <div class="flex flex-wrap -mx-3 mb-6">
+          <div class="w-full px-3">
+            <label class="block uppercase tracking-wide text-gray-400 text-xs mb-2" for="grid-email">
+              {{ "email" | translate }}
+            </label>
+            <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3
+             px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                   id="grid-email" type="email" placeholder="" formControlName="email">
+            <p class="text-gray-600 text-xs italic"></p>
+          </div>
+
+          <div class="w-full px-3">
+            <label class="block uppercase tracking-wide text-gray-400 text-xs mb-2" for="grid-city">
+              {{ "message" | translate }}
+            </label>
+            <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded
+             py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      id="grid-city" placeholder="" formControlName="message"></textarea>
+          </div>
+          <div>
+            <button type="submit"
+                    [disabled]="contactForm.pristine || contactForm.invalid"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              {{ 'send' | translate}}
+            </button>
+          </div>
+
+
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+</div>
+
+
 </div>

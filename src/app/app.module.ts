@@ -16,7 +16,7 @@ import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
 import { LoginComponent } from './pages/login/login.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { PageNotFoundComponent } from './pages/error/page-not-found/page-not-found.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -50,7 +50,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserModule,
     AppRoutingModule,
     NgOptimizedImage,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

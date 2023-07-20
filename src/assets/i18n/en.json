@@ -1,13 +1,18 @@
 {
   "lang_code": "hu",
   "under_dev": "Content of the page is being uploaded...",
-  "Contact": "Contact",
+  "contact": "Contact",
   "who we support": "Who we support",
   "events": "Events",
   "supporters": "Supporters",
   "privacy": "Privacy",
   "about us": "About Us",
   "page_not_found": "Page Not Found",
+  "send": "Send",
+  "first_name": "First Name",
+  "last_name": "Last Name",
+  "email": "Email address",
+  "message": "Message",
   "page": {
     "welcome": {
       "title": "Welcome to the Tündérmosoly Foundation's website!",

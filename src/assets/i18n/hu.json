@@ -1,13 +1,18 @@
 {
   "lang_code": "en",
   "under_dev": "Az oldal tartalma feltöltés alatt...",
-  "Contact": "Kapcsolat",
+  "contact": "Kapcsolat",
   "who we support": "Akiket támogatunk",
   "events": "Események",
   "supporters": "Támogatóink",
   "privacy": "Adatvédelem",
   "about us": "Rólunk",
   "page_not_found": "Az oldal nem található",
+  "send": "Elküld",
+  "first_name": "Keresztnév",
+  "last_name": "Vezetéknév",
+  "email": "Email cím",
+  "message": "Üzenet",
   "page": {
     "welcome": {
       "title": "Üdvözöljük a Tündérmosoly Alapítvány weboldalán!",
