@@ -15,6 +15,8 @@ import {PrstartComponent} from './pages/prstart.component';
 import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+import { LoginComponent } from './pages/login/login.component';
+import {FormsModule} from "@angular/forms";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -30,7 +32,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     SponsorsComponent,
     PrivacyComponent,
     AboutUsComponent,
-    PrstartComponent
+    PrstartComponent,
+    LoginComponent
   ],
   imports: [
     HttpClientModule,
@@ -44,7 +47,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     }),
     BrowserModule,
     AppRoutingModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
