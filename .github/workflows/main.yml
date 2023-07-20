@@ -9,8 +9,16 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./
 
     steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1 #this installs node and npm for us
+        with:
+          node-version: '16.x'
+
       - name: Add ssh
         uses: webfactory/ssh-agent@v0.5.4
         with:
@@ -19,3 +27,11 @@ jobs:
       - name: 'SSH: TRUST HOSTS'
         run: |
           ssh-keyscan prhosting.hu >> ~/.ssh/known_hosts
+
+      - name: executing remote ssh commands using password
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: prhosting.hu
+          username: alphaws
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          script: whoami
