@@ -24,6 +24,5 @@ jobs:
           username: alphaws
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            whoami
             cd /var/www/tundermosoly/tundermosoly-fe
             bin/refresh
