@@ -1,0 +1,21 @@
+name: deploy
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Add ssh
+        uses: webfactory/ssh-agent@v0.5.4
+        with:
+          ssh-private-key: ${{ secrets.SERVER_SSH_KEY }}
+
+      - name: 'SSH: TRUST HOSTS'
+        run: |
+          ssh-keyscan prhosting.hu >> ~/.ssh/known_hosts
