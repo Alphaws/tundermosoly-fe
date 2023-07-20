@@ -15,9 +15,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1 #this installs node and npm for us
-        with:
-          node-version: '16.x'
 
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@master
