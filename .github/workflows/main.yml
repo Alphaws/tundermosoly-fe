@@ -19,15 +19,6 @@ jobs:
         with:
           node-version: '16.x'
 
-      - name: Add ssh
-        uses: webfactory/ssh-agent@v0.5.4
-        with:
-          ssh-private-key: ${{ secrets.SERVER_SSH_KEY }}
-
-      - name: 'SSH: TRUST HOSTS'
-        run: |
-          ssh-keyscan prhosting.hu >> ~/.ssh/known_hosts
-
       - name: executing remote ssh commands using password
         uses: appleboy/ssh-action@v0.1.10
         with:
