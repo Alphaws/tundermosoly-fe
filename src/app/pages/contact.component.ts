@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
+import {ContactService} from "../services/contact.service";
 
 @Component({
   selector: 'app-contact',
@@ -15,10 +16,17 @@ export class ContactComponent implements OnInit {
     message: new FormControl('', [Validators.required]),
   });
 
-  constructor(private fb: FormBuilder) {
+  constructor(
+    private fb: FormBuilder,
+    private contactService: ContactService
+  ) {
 
   }
 
   ngOnInit() {}
 
+  submitForm() {
+    console.log(this.contactForm.value);
+    this.contactService.sendContactForm(this.contactForm.value);
+  }
 }
