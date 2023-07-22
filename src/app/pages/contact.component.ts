@@ -10,8 +10,7 @@ import {ContactService} from "../services/contact.service";
 export class ContactComponent implements OnInit {
 
   contactForm: FormGroup = new FormGroup<any>({
-    lastName: new FormControl('', [Validators.required]),
-    firstName: new FormControl('', [Validators.required]),
+    name: new FormControl('', [Validators.required]),
     email: new FormControl('', [Validators.required]),
     message: new FormControl('', [Validators.required]),
   });
